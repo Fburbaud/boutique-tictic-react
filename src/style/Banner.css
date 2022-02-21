@@ -1,0 +1,15 @@
+.bt-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.bt-link-banner{
+    font-size: 1.3em;
+    color: black;
+}
+.bannerLogo{
+    width: 100px;
+    height: 100px;
+}
