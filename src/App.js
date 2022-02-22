@@ -6,10 +6,12 @@ import ShoppingList from "./components/ShoppingList";
 import Sidebar from "./components/Sidebar";
 import Cart from "./components/Cart";
 import PaginationBasic from "./components/PaginationBasic";
+import { medicineList } from "./datas/medicineList";
 
 class App extends React.Component {
   onSearchSubmit = (term) => { 
-    console.log(term);
+    const resultat = medicineList.find( medicine => medicine.name == term);
+    console.log(resultat);
   }
 
   render(){
