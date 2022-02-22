@@ -8,17 +8,17 @@ const Sidebar = () => {
             <div className="item">
                 <img className="bannerLogo" src={logo} alt='Boutique Tictic'/>
             </div>
-            <a class="item">
-                <i class="home icon"></i>
-                Home
+            <a className="item">
+                <i className="home icon"></i>
+                Accueil
             </a>
-            <a class="item">
-                <i class="block layout icon"></i>
-                Topics
+            <a className="item">
+                <i className="leaf icon"></i>
+                Plantes
             </a>
-            <a class="item">
-                <i class="smile icon"></i>
-                Friends
+            <a className="item">
+                <i className="info icon"></i>
+                Conseils
             </a>
         </div>
     );

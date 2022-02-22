@@ -1,6 +1,7 @@
 import React from "react";
 
 const Items = ({name, cover, description, price}) => {
+    
     return (
         <div className="card">
             <div className="image">
@@ -13,8 +14,13 @@ const Items = ({name, cover, description, price}) => {
                 </div>
             </div>
             <div className="extra content">
-                <span className="right floated">
+                <span className="left floated">
                     {price} €
+                </span>
+                <span className="right floated">
+                    <button className="ui small basic icon button" >
+                        <i className="shop icon"></i>
+                    </button>
                 </span>
             </div>
         </div>

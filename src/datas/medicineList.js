@@ -2,6 +2,7 @@ import alfalfa from '../assets/alfalfa.jpg';
 import anisVert from '../assets/anis-vert.jpg';
 import artichaut from '../assets/artichaut.jpg';
 import badiane from '../assets/badiane.jpg';
+import basilic from '../assets/basilic.jpg';
 import bleuet from '../assets/bleuet.jpg';
 import menthePoivree from '../assets/menthePoivree.jpg';
 
@@ -35,15 +36,22 @@ export const medicineList = [
 		price: 5
     },
     {
-        name: 'Bleuet',
+        name: 'Basilic',
 		id: '5af',
+		cover: basilic,
+        description: 'Facilite la digestion',
+		price: 10
+    },
+    {
+        name: 'Bleuet',
+		id: '6te',
 		cover: bleuet,
         description: 'Apaise les yeux irrités',
 		price: 5
     },
     {
         name: 'Menthe Poivree',
-		id: '6te',
+		id: '7uj',
 		cover: menthePoivree,
         description: 'Aide à la disgestion, tonique',
 		price: 10
