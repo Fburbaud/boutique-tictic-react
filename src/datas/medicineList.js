@@ -10,36 +10,42 @@ export const medicineList = [
         name: 'Alfalfa',
 		id: '1ed',
 		cover: alfalfa,
+        description: "Apporte de l'énergie et renforce le système immunitaire",
 		price: 15
     },
     {
         name: 'Anis vert',
 		id: '2ab',
 		cover: anisVert,
+        description: 'Efficace contre les ballonnements',
 		price: 7
     },
     {
         name: 'Artichaut',
 		id: '3hu',
 		cover: artichaut,
+        description: 'Stimule le foie et la vésicule biliaire, élimine les toxines',
 		price: 10
     },
     {
         name: 'Badiane',
 		id: '4fa',
 		cover: badiane,
+        description: 'Facilite la digestion',
 		price: 5
     },
     {
         name: 'Bleuet',
 		id: '5af',
 		cover: bleuet,
+        description: 'Apaise les yeux irrités',
 		price: 5
     },
     {
         name: 'Menthe Poivree',
 		id: '6te',
 		cover: menthePoivree,
+        description: 'Aide à la disgestion, tonique',
 		price: 10
     }
 ]

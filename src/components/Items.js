@@ -1,6 +1,6 @@
 import React from "react";
 
-const Items = ({name, cover, price}) => {
+const Items = ({name, cover, description, price}) => {
     return (
         <div className="card">
             <div className="image">
@@ -9,7 +9,7 @@ const Items = ({name, cover, price}) => {
             <div className="content">
                 <div className="header">{name}</div>
                 <div className="description">
-                    Matthew is an interior designer living in New York.
+                    {description}
                 </div>
             </div>
             <div className="extra content">
