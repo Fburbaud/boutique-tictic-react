@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './style/SearchBar.css';
 import Banner from "./components/Banner";
 import SearchBar from "./components/SearchBar";
@@ -8,19 +8,20 @@ import Cart from "./components/Cart";
 import PaginationBasic from "./components/PaginationBasic";
 import { medicineList } from "./datas/medicineList";
 
-class App extends React.Component {
-  onSearchSubmit = (term) => { 
+function App (){
+  const [isOpen, setIsOpen] = useState(false);
+
+  const onSearchSubmit = (term) => { 
     const resultat = medicineList.find( medicine => medicine.name == term);
     console.log(resultat);
   }
 
-  render(){
     return (
       <div>
-        <Banner/>
+        <Banner isOpen={isOpen} setIsOpen={setIsOpen}/>
         <Sidebar />
         <div className="bt-searchBar">
-          <SearchBar onSubmit={this.onSearchSubmit} />
+          <SearchBar onSubmit={onSearchSubmit} />
         </div>
         <Cart />
         <div className="ui container">
@@ -29,7 +30,6 @@ class App extends React.Component {
         <PaginationBasic />
       </div>
     );
-  }
 }
 
 export default App;
