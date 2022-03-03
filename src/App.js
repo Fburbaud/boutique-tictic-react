@@ -9,16 +9,14 @@ import PaginationBasic from "./components/PaginationBasic";
 import { medicineList } from "./datas/medicineList";
 
 function App (){
-  const [isOpen, setIsOpen] = useState(false);
-
+  const [plant, setPlant] = useState([]);
   const onSearchSubmit = (term) => { 
-    const resultat = medicineList.find( medicine => medicine.name == term);
-    console.log(resultat);
+    const resultat = medicineList.find( medicine => medicine.name === term);
   }
 
     return (
       <div>
-        <Banner isOpen={isOpen} setIsOpen={setIsOpen}/>
+        <Banner />
         <Sidebar />
         <div className="bt-searchBar">
           <SearchBar onSubmit={onSearchSubmit} />
